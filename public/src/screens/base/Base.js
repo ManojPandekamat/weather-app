@@ -17,7 +17,7 @@ function Base() {
   const call = async () => {
     // const result = document.querySelector(".result")
     try {
-      const url = `http://api.weatherapi.com/v1/current.json?key=f55b1a67b2c34fc8a7390538240209&q=${city.toLowerCase()}`;
+      const url = `http://api.weatherapi.com/v1/current.json?key=${`Enter Here your api key`}&q=${city.toLowerCase()}`;
       const response = await axios.get(url);
 
       setWeather(response.data); // Update weather state
